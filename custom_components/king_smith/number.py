@@ -31,7 +31,7 @@ async def async_setup_entry(
     treadmillName = config_entry.data.get(CONF_NAME) or DOMAIN
     data = hass.data[DOMAIN][config_entry.entry_id]
 
-    entity = WalkingPadSpeed(f"{treadmillName}_speed", data["device"], data["coordinator"])
+    entity = WalkingPadSpeed(treadmillName, data["device"], data["coordinator"])
     async_add_entities([entity])
 
 

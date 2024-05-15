@@ -13,7 +13,7 @@ from .const import DOMAIN
 from .coordinator import WalkingPadCoordinator
 from .walking_pad import WalkingPadApi
 
-PLATFORMS: list[Platform] = [Platform.NUMBER, Platform.SENSOR, Platform.SWITCH]
+PLATFORMS: list[Platform] = [Platform.SWITCH, Platform.NUMBER, Platform.SENSOR]
 
 _LOGGER = logging.getLogger(__name__)
 
